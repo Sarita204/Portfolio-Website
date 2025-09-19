@@ -1,0 +1,269 @@
+.connect-info-container {
+  display: flex;
+  width: 290px;
+  background: #FFFFFF;
+  border-radius: 4px 4px 29px 26px;
+
+}
+
+
+
+.connect-info-form-container {
+  width: 280px;
+  height: 430px;
+
+}
+
+.connect-info-header {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: left;
+  margin: 10px;
+  color: #090909;
+}
+
+.connect-info {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.connect-info-info-container {
+  display: flex;
+  margin: 24px;
+}
+
+.connect-info-info-icon {
+  margin-right: 24px;
+}
+
+.connect-info-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Sec */
+
+  color: #FFFFFF;
+}
+
+.connect-info-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 141.7%;
+  /* or 23px */
+
+  letter-spacing: 0.05em;
+
+  /* Sec */
+
+  color: #FFFFFF;
+}
+
+.connect-info-form-input-container {
+  padding: 5px 0;
+}
+
+.connect-info-form-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  /* Character / Title .85 */
+
+  color: rgba(0, 0, 0, 0.85);
+  text-align: left;
+  margin: 5px;
+}
+
+.connect-info-form-input {
+
+
+  width: 85%;
+  height: 20px;
+  padding: 8px 20px 8px 8px;
+  /* Neutral/1 */
+  background: #FFFFFF;
+  border: 1px solid rgba(9, 9, 9, 0.3);
+  border-radius: 2px;
+}
+
+.connect-info-form-button {
+
+
+  flex: 1;
+  height: 41px;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* Primary */
+
+  background: #209541;
+  border-radius: 4px;
+  border: none;
+}
+
+.connect-info-form-input input {
+  border: none;
+  outline: none;
+  border-left: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 200px;
+  bottom: 400px;
+  right: 220px;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 2000;
+  top: 100px;
+  padding: 30px;
+}
+
+.close-button {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* .car-image{
+    height: 100%;
+    padding-top: 20px;
+  } */
+.hide {
+  display: none;
+}
+
+.close-car-image {
+  position: relative;
+  top: 450px;
+  margin-left: -110px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.float-car-image {
+  position: fixed;
+  width: 55px;
+  height: 152px;
+  bottom: 400px;
+  right: 79px;
+  top: 582px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2000;
+
+}
+
+.mobile-close-image,
+.mobile-fab-car-image {
+  display: none;
+}
+
+
+.connect-info-sub-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #FFFFFF;
+  margin-bottom: 17px;
+  opacity: 0.8;
+}
+
+.overlay__background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 9;
+  display: none;
+}
+
+@media (max-width:780px) {
+  .mobile-close-image {
+    display: block;
+    position: relative;
+    top: 430px;
+    margin-left: -60px;
+    cursor: pointer;
+    width: 90px;
+  }
+
+  .mobile-fab-car-image {
+    display: block;
+    position: fixed;
+    width: 55px;
+    height: 152px;
+    bottom: 400px;
+    right: 34px;
+    top: 560px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 2000;
+  }
+
+  .close-car-image {
+    display: none;
+  }
+
+  .float-car-image {
+    display: none;
+  }
+
+  .overlay__background {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9;
+  }
+
+  .overlay__container {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .overlay__controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .overlay__close:after {
+    display: inline-block;
+    content: "\00d7";
+  }
+
+  .overlay__close {
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    cursor: pointer;
+  }
+}

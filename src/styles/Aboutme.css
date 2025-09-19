@@ -1,0 +1,491 @@
+/* Desktop View */
+.aboutme-section {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0 40px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bio-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.highlight {
+  color: #00e1ff;
+  font-weight: 600;
+}
+
+.btn-modern {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 225, 255, 0.5);
+}
+
+.btn-modern:hover {
+  background: #358eb4;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 0, 204, 0.5);
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-border {
+  border-radius: 5%;
+  padding: 2px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00e1ff);
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-border:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 225, 255, 0.5);
+}
+
+.profile-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 4px solid #000;
+  height: 350px;
+}
+
+
+/* Tech Skills Section  */
+.techskills-section {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 5px 0;
+
+}
+
+.skill-card {
+  background: #111;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border: 1px inset;
+  border-top-left-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 225, 255, 0.5), 0 0 20px rgba(255, 0, 204, 0.5);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Icon colors per tech */
+.skill-icon.html {
+  color: #ed9c21;
+}
+
+.skill-icon.html5 {
+  color: #e34c26;
+}
+
+.skill-icon.css {
+  color: #ef259e;
+}
+
+.skill-icon.css3 {
+  color: #264de4;
+}
+
+.skill-icon.scss {
+  color: #e85ea5;
+}
+
+.skill-icon.bootstrap {
+  color: #563d7c;
+}
+
+.skill-icon.react {
+  color: #61dafb;
+}
+
+.skill-icon.js {
+  color: #f7df1e;
+}
+
+.skill-icon.node {
+  color: #3c873a;
+}
+
+.skill-icon.mongo {
+  color: #4db33d;
+}
+
+.skill-icon.express {
+  color: #fff;
+}
+
+.skill-icon.redux {
+  color: #764abc;
+}
+
+
+.skill-card h5 {
+  color: #00e1ff;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tools section  */
+.tools-section {
+  padding: 60px 0;
+  background: #000;
+  /* black background */
+  text-align: center;
+}
+
+.tool-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #bcb7b7;
+  border-radius: 15px;
+  padding: 30px 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tool-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 225, 255, 0.5);
+}
+
+.tool-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Tool-specific colors */
+.tool-icon.vscode {
+  color: #22a8f2;
+}
+
+.tool-icon.postman {
+  color: #ff6c37;
+}
+
+.tool-icon.git {
+  color: #f14e32;
+}
+
+.tool-icon.github {
+  color: #fff;
+}
+
+.tool-icon.figma {
+  color: #a259ff;
+}
+
+.tool-icon.npm {
+  color: #cb3837;
+}
+
+.tool-icon.netlify {
+  color: #00c7b7;
+}
+
+.tool-icon.vercel {
+  color: #fff;
+}
+
+.tool-icon.cpanel {
+  color: #f36c21;
+}
+
+.tool-card h5 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.tool-img {
+  width: 75px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+
+/* Experience section */
+.experience-section {
+  background-color: #000;
+  color: white;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 225, 255, 0.3);
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  border: 1px solid rgba(255, 0, 204, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 225, 255, 0.25);
+}
+
+.experience-icon {
+  font-size: 2.5rem;
+  color: #00e1ff;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.experience-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.company {
+  color: #00e1ff;
+  font-weight: 500;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #aaa;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.responsibility-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00e1ff;
+  margin: 12px 0 8px;
+  letter-spacing: 0.5px;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.point-icon {
+  color: #00e1ff;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+
+/* Education section  */
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(250, 24, 205, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 225, 255, 0.3);
+}
+
+.education-icon {
+  color: #fff;
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
+
+.education-content h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.education-content .institute {
+  color: #00d4ff;
+  margin-bottom: 3px;
+}
+
+.education-content .duration {
+  display: inline-block;
+  color: #9da8c3;
+  margin-bottom: 8px;
+}
+
+.education-content .grade {
+  color: #9da8c3;
+  margin-bottom: 8px;
+}
+
+.education-content p {
+  color: #c5c6ca;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.scrool-up-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  border-radius: 5px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.scrool-icon {
+  font-size: 40px;
+  border: 1px solid rgba(250, 24, 205, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+
+.about-whatsp-hithere {
+  color: green;
+  font-size: 40px;
+  border-radius: 20%;
+  position: fixed;
+  bottom: 12px;
+  right: 10px;
+  padding: 2px;
+  z-index: 999;
+}
+
+.about-whatsp-hithere {
+  animation: hithere 1s ease infinite;
+}
+
+@keyframes about-whatsp-hithere {
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Mobile Responsive  */
+@media screen and (max-width: 799px) {
+  .section-title {
+    font-size: 30px;
+    margin: 15px 0px !important;
+  }
+
+  .techskills-section {
+    padding: 0px !important;
+  }
+
+  .tools-section {
+    padding: 0px !important;
+  }
+
+  .experience-section {
+    padding: 0px !important;
+  }
+
+  .experience-card,
+  .education-card {
+    padding: 10px;
+  }
+
+  .experience-content h4 {
+    font-size: 18px;
+  }
+
+  .point-icon {
+    font-size: 35px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+
+  .scrool-up-icon,
+  .about-whatsp-hithere {
+    position: fixed;
+    right: 0px;
+  }
+}

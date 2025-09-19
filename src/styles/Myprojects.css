@@ -1,0 +1,174 @@
+
+.project-section {
+    background-color: black;
+    padding: 80px 0 40px;
+    position: relative;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-card {
+    background-color: #111;
+    text-align: center;
+    border: 1px inset;
+    border: 1px solid rgba(250, 24, 205, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 225, 255, 0.5);
+}
+
+.card-img-top {
+    border-radius: 10px !important;
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+    cursor: pointer;
+
+}
+
+.hover-zoom {
+    transition: transform 0.4s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+.projects-body {
+    padding: 12px;
+}
+
+.project-name {
+    color: rgb(14 198 223 / 96%) !important;
+    font-family: none;
+    font-size: 20px;
+}
+
+.live-dot {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: 4px -40px 60px 5px green inset;
+}
+
+.live-text {
+    color: white !important;
+    font-size: 12px;
+}
+
+.flash {
+    animation: flash 500ms ease infinite alternate;
+    background: #198754;
+    margin: 0 5px 0 0;
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.navigate-to-site {
+    color: white !important;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.fade-in-left {
+    animation: fade-in-left 2s ease infinite;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project-card hr {
+    border: none;
+    height: 1px;
+    background: gray;
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+.Project-details {
+    font-size: 16px;
+    color: white;
+}
+
+.git-icon {
+    margin: auto 0px;
+}
+
+.navigate-to-github {
+    color: white !important;
+    font-size: 30px;
+}
+
+.hithere {
+    animation: hithere 1s ease infinite;
+}
+
+@keyframes hithere {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-width {
+    width: -webkit-fill-available !important;
+}
+
+
+.scrool-up-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.scrool-icon {
+    font-size: 40px;
+    border: 1px solid rgba(250, 24, 205, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
