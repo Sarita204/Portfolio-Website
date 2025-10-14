@@ -150,6 +150,10 @@
   color: #fff;
 }
 
+.skill-icon.typescript{
+  color: #61DBFB;
+}
+
 .skill-icon.redux {
   color: #764abc;
 }
@@ -199,16 +203,16 @@
   color: #ff6c37;
 }
 
-.tool-icon.git {
-  color: #f14e32;
-}
-
 .tool-icon.github {
   color: #fff;
 }
 
-.tool-icon.figma {
-  color: #a259ff;
+.tool-icon.msword {
+  color: #2B579A;
+}
+
+.tool-icon.excel {
+  color: #217346;
 }
 
 .tool-icon.npm {
@@ -364,7 +368,7 @@
 
 .education-content h4 {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
@@ -388,6 +392,64 @@
   color: #c5c6ca;
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* Certificates Section */
+.certificates-section {
+  padding: 60px 0;
+  background-color: black; /* light background, optional */
+}
+
+.certificate-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: black;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(250, 24, 205, 0.7);
+  text-align: left;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.certificate-icon {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.certificate-content h4 {
+  margin: 0;
+  font-size: 20px;
+  /* color: #00d4ff; */
+  color: white;
+}
+
+.certificate-content .issuer {
+  font-size: 18px;
+  color: #00d4ff;
+  margin: 5px 0;
+}
+
+.certificate-content .duration {
+  font-size: 0.85rem;
+  color: white;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.certificate-content p a {
+  color: #0d6efd; /* bootstrap primary color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.certificate-content p a:hover {
+  text-decoration: underline;
 }
 
 
@@ -486,6 +548,6 @@
   .scrool-up-icon,
   .about-whatsp-hithere {
     position: fixed;
-    right: 0px;
+    right: 10px;
   }
 }

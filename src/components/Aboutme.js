@@ -3,7 +3,7 @@ import '../styles/Aboutme.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaBootstrap, FaBriefcase, FaCheckCircle, FaArrowCircleDown } from 'react-icons/fa';
 import { PiFileHtmlBold } from "react-icons/pi";
-import { SiJavascript, SiMongodb, SiRedux, SiExpress, SiVisualstudiocode, SiGithub, SiPostman, SiNetlify, SiVercel, SiNpm } from 'react-icons/si';
+import { SiJavascript, SiMongodb, SiRedux, SiExpress, SiVisualstudiocode, SiTypescript, SiGithub, SiPostman, SiNetlify, SiVercel, SiNpm, SiMicrosoftword, SiMicrosoftexcel } from 'react-icons/si';
 import { BsFiletypeCss, BsFiletypeScss } from "react-icons/bs";
 import { FaCircleArrowUp, FaCircleArrowDown } from "react-icons/fa6";
 import Aos from "aos";
@@ -94,8 +94,7 @@ const AboutMe = () => {
                                     I focus on creating responsive, scalable, and visually appealing solutions while following UI/UX best practices.
                                 </p>
                                 <p className="bio-text">
-                                    My tech stack includes <strong>React.js, JavaScript, Node.js, MongoDB, Express.js, Postman API, HTML, HTML5, CSS, CSS3, SCSS, Bootstrap, Material UI</strong> and basics of Redux.
-                                    I thrive on turning complex problems into simple, elegant solutions that delight users.
+                                    I enjoy transforming ideas into real-world digital experiences and continuously learning new technologies to stay ahead in the ever-evolving web landscape. I believe great design and clean code go hand in hand, and I take pride in crafting interfaces that not only look good but also feel intuitive and purposeful.
                                 </p>
                                 <Button className="btn-modern" href="/myprojects">View Projects</Button>
                             </div>
@@ -201,6 +200,13 @@ const AboutMe = () => {
 
                                 <Col md={3} sm={6} className="mb-4">
                                     <div className="skill-card">
+                                        <SiTypescript className="skill-icon typescript" />
+                                        <h5>TypeScript</h5>
+                                    </div>
+                                </Col>
+
+                                <Col md={3} sm={6} className="mb-4">
+                                    <div className="skill-card">
                                         <SiRedux className="skill-icon redux" />
                                         <h5>Redux</h5>
                                     </div>
@@ -239,6 +245,20 @@ const AboutMe = () => {
                                     <div className="tool-card">
                                         <SiNpm className="tool-icon npm" />
                                         <h5>NPM</h5>
+                                    </div>
+                                </Col>
+
+                                <Col md={3} sm={6} className="mb-4">
+                                    <div className="tool-card">
+                                        <SiMicrosoftword className="tool-icon msword" />
+                                        <h5>Microsoft Word</h5>
+                                    </div>
+                                </Col>
+
+                                <Col md={3} sm={6} className="mb-4">
+                                    <div className="tool-card">
+                                        <SiMicrosoftexcel className="tool-icon excel" />
+                                        <h5>Microsoft Excel</h5>
                                     </div>
                                 </Col>
 
@@ -408,6 +428,174 @@ const AboutMe = () => {
                                 </Col>
                             </Row>
                         </Container>
+
+
+                    </section>
+
+                    {/* Certifications */}
+                    <section>
+                       <section id="certificates" className="certificates-section">
+  <Container>
+    <h2 className="section-title text-center mb-5">Certificates</h2>
+    <Row>
+      {/* Certificate 1 */}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+             📜
+          </div>
+          <div className="certificate-content">
+            <h4>Certificate of Excellence in JavaScript OOP Master </h4>
+            <h6 className="issuer">TechGig</h6>
+            <span className="duration">July 2025</span>
+            <p>
+              <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Certificate 2 */}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Containerized Applications on AWS </h4>
+            <h6 className="issuer">Coursera</h6>
+            <span className="duration">August 2023</span>
+            <p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/C7WJX44HYZLF" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+       {/* Certificate 3 */}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Certificate of Achievement </h4>
+            <h6 className="issuer">Newton School</h6>
+            <span className="duration">June 2023</span>
+            <p>
+              <a href="https://my.newtonschool.co/course/a75hx7fteu/certificate/ito7wej528jz/verify" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Certificate 4*/}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Particpated in the coding challenge.</h4>
+            <h6 className="issuer">Skillyst Techtopia</h6>
+            <span className="duration">March 2023</span>
+            <p>
+              <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Certificate 5*/}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Skill Validation Certification for HTML/CSS</h4>
+            <h6 className="issuer">CutShort</h6>
+            <span className="duration">Feb 2023</span>
+            <p>
+              <a href="https://drive.google.com/file/d/1Lg7fvXpis7z5Ok2sXpX_A1E_Zf4tg4zR/view?usp=drive_link" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Certificate 6*/}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Skill Validation Certification for React.js</h4>
+            <h6 className="issuer">CutShort</h6>
+            <span className="duration">Feb 2023</span>
+            <p>
+              <a href="https://drive.google.com/file/d/1e8IxLMc18cso8CeOanCq9c3noFwaR1aG/view?usp=drive_link" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Certificate 7*/}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Completion Certificate of Responsive Web Design</h4>
+            <h6 className="issuer">freeCodeCamp</h6>
+            <span className="duration">June 2023</span>
+            <p>
+              <a href="https://www.freecodecamp.org/certification/fcc94b763ae-700f-4806-8d5c-3be3560d72da/responsive-web-design" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+       {/* Certificate 8*/}
+      <Col md={12} className="mb-4">
+        <div className="certificate-card">
+          <div className="certificate-icon">
+            📜
+          </div>
+          <div className="certificate-content">
+            <h4>Completing 7 days Free Bootcamp on Netfix Clone using HTML, CSS and JavaScript</h4>
+            <h6 className="issuer">DevTown</h6>
+            <span className="duration">Sep 2023</span>
+            <p>
+              <a href="https://drive.google.com/file/d/17yOTM_9ky5kSqaf5z1iG6uLLt5LfCzwT/view?usp=drive_link" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </p>
+          </div>
+        </div>
+      </Col>
+
+      {/* Add more certificates similarly */}
+    </Row>
+  </Container>
+</section>
+
+
                     </section>
                 </Container>
             </section>

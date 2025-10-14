@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="custom-navbar" variant="dark" fixed="top">
       <Container>
-
         {/* Toggle button for mobile */}
         <div className="ms-auto">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
