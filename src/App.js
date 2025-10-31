@@ -11,7 +11,6 @@ import Myprojects from './components/Myprojects';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
         <Routes>
           <Route
             path='/'
@@ -43,8 +42,6 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
-
 
     </div>
 

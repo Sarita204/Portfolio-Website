@@ -15,6 +15,29 @@
   margin-right: 1rem;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;           
+  transition: color 0.2s ease;
+}
+
+.nav-links .nav-link.active {
+  color: #ff00cc !important;
+}
+
+.nav-links .nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; 
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(90deg,#00d9ff);
+  transition: width 250ms ease;
+}
+
+/* expand underline on hover OR when active */
+.nav-links .nav-link.active::after {
+  width: 100%;
 }
 
 .nav-links .nav-link:hover {

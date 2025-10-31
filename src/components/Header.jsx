@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import "../styles/header.css";
+import { NavLink } from "react-router-dom"; // ✅ Correct import here
 
 const Header = () => {
   return (
@@ -14,9 +15,12 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Left side nav links */}
           <Nav className="me-auto nav-links">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About Me</Nav.Link>
-            <Nav.Link href="/myprojects">Projects</Nav.Link>
+            {/* <Nav.Link href="/" className="nav-link">Home</Nav.Link>
+            <Nav.Link href="/about" className="nav-link">About Me</Nav.Link>
+            <Nav.Link href="/myprojects" className="nav-link">Projects</Nav.Link> */}
+             <Nav.Link as={NavLink} to="/" end className="nav-link">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/about" className="nav-link">About Me</Nav.Link>
+            <Nav.Link as={NavLink} to="/myprojects" className="nav-link">Projects</Nav.Link>
           </Nav>
 
           {/* Right side social icons */}
