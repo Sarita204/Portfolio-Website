@@ -169,7 +169,7 @@ const Myprojects = () => {
         </div>
         <Container>
 
-          <h2 className="section-title text-center mb-4 fw-bold">My Projects</h2>
+          <h2 className="section-title mb-4 fw-bold">My Projects</h2>
 
           {/* Project Cards Start */}
           <Row>

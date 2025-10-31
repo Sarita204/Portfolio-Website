@@ -511,6 +511,9 @@
 
 /* Mobile Responsive  */
 @media screen and (max-width: 799px) {
+  .aboutme-section{
+    padding: 45px 0 40px;
+  }
   .section-title {
     font-size: 30px;
     margin: 15px 0px !important;

@@ -43,6 +43,26 @@
 .nav-links .nav-link:hover {
   color: #00d9ff !important;
 }
+.custom-toggler {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+/* Common icon styles */
+.toggle-icon {
+  color: white;
+  font-size: 1.8rem;
+  position: relative;
+  top: 2px;
+  right: 0;
+}
+
+/* Optional: make sure default Bootstrap icon doesn’t overlap */
+.navbar-toggler-icon {
+  display: none !important;
+}
 
 .social-icons .nav-link {
   color: white !important;
@@ -61,6 +81,16 @@
     margin-top: 1rem;
   }
 
+  .nav-links .nav-link::after{
+  content: "";
+  position: absolute;
+  left: 90px;
+  bottom: 0px; 
+  max-width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg,#00d9ff);
+  transition: width 250ms ease;
+}
   .social-icons {
     display: flex !important;
     flex-direction: row !important;
