@@ -83,18 +83,17 @@ const Header = () => {
     >
       <Container>
         {/* Toggle button for mobile */}
-       <Navbar.Toggle
-  aria-controls="basic-navbar-nav"
-  onClick={() => setExpanded(!expanded)}
-  className="custom-toggler ms-auto"
->
-  {expanded ? (
-    <IoCloseOutline className="toggle-icon" />
-  ) : (
-    <IoMdMenu className="toggle-icon" />
-  )}
-</Navbar.Toggle>
-
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+          className="custom-toggler ms-auto"
+        >
+          {expanded ? (
+            <IoCloseOutline className="toggle-icon" />
+          ) : (
+            <IoMdMenu className="toggle-icon" />
+          )}
+        </Navbar.Toggle>
 
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Left side nav links */}
@@ -132,6 +131,8 @@ const Header = () => {
               href="https://www.linkedin.com/in/sarita-p-04b290262/"
               target="_blank"
               onClick={handleNavClick}
+              className="linkedin"
+
             >
               <FaLinkedin />
             </Nav.Link>

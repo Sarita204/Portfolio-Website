@@ -3,9 +3,10 @@ import "../styles/Myprojects.css"
 import { Button, Col, Container, Modal, Row } from "react-bootstrap";
 import { TbBrandGithub } from "react-icons/tb";
 import Aos from "aos";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaCircleArrowUp, FaCircleArrowDown } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 const Myprojects = () => {
 
@@ -152,7 +153,7 @@ const Myprojects = () => {
       <section className="project-section">
         <div>
           <a href="https://wa.me/917996748513" target="_blank" className='whatsapp-img ' rel="noreferrer">
-            <IoLogoWhatsapp className="about-whatsp-hithere" />
+            <FaWhatsapp  className="about-whatsp-hithere" />
           </a>
         </div>
         <div
@@ -199,15 +200,11 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Daily Dish is a Food Delivery Web Application designed to provide users...
-                  </div>
+                  
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow()}>
-                        Read More
-                      </Button>
-                    </div>
+                      <div className="view-icon" onClick={() => handleShow()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Dailydish-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -227,7 +224,7 @@ const Myprojects = () => {
                 <img
                   src="../Assets/shuttlesmash-img.jpg"
                   alt="Card"
-                  className="card-img-top hover-zoom"
+                  className="card-img-top hover-zoom" 
                 />
                 <div className="projects-body">
                   <div className="project-name" >Shuttle Smash Championship.</div>
@@ -243,15 +240,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Shuttle Smash Championship is a Badminton Tournament Managemen...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow1()}>
-                        Read More
-                      </Button>
-                    </div>
+                    <div className="view-icon" onClick={() => handleShow1()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Shuttle-smash-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -287,15 +279,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Roomyy Interior Designing Application is designed to transform living spaces...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow2()}>
-                        Read More
-                      </Button>
-                    </div>
+                   <div className="view-icon" onClick={() => handleShow2()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Roomyy-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -331,15 +318,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    This Student Database Web Application provides comprehensive...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow3()}>
-                        Read More
-                      </Button>
-                    </div>
+                <div className="view-icon" onClick={() => handleShow3()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Student-Database-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -375,15 +357,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    This is a Computers / Laptop Service Provider Web Application designed...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow4()}>
-                        Read More
-                      </Button>
-                    </div>
+               <div className="view-icon" onClick={() => handleShow4()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Insta-buy-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -419,15 +396,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    This is a Nestway Interiors Web Application Designed to Rede..
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow5()}>
-                        Read More
-                      </Button>
-                    </div>
+               <div className="view-icon" onClick={() => handleShow5()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Nestway-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -463,15 +435,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Tripgraam is a Dedicated Tourism Platform designed to simplify the...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow6()}>
-                        Read More
-                      </Button>
-                    </div>
+              <div className="view-icon" onClick={() => handleShow6()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Tripgraam-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -507,15 +474,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    At Value Pro, we are committed to providing top-notch online computer...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow7()}>
-                        Read More
-                      </Button>
-                    </div>
+<div className="view-icon" onClick={() => handleShow7()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/UC-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -538,7 +500,7 @@ const Myprojects = () => {
                   className="card-img-top hover-zoom"
                 />
                 <div className="projects-body">
-                  <div className="project-name" >TechAR² Application.</div>
+                  <div className="project-name" >TechAR² Courses Application.</div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <span className="live-dot flash"></span>
@@ -551,15 +513,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    TechAR² Technologies is a technology driven organization that is committed...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow8()}>
-                        Read More
-                      </Button>
-                    </div>
+                <div className="view-icon" onClick={() => handleShow8()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Techar2" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -595,15 +552,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Unique Square is a dynamic and innovative solutions provider specia...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow9()}>
-                        Read More
-                      </Button>
-                    </div>
+                <div className="view-icon" onClick={() => handleShow9()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Unique-Square-website" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -639,15 +591,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Unique Industrial Solutions (UIS) is a trusted leader in the packaging indus...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow10()}>
-                        Read More
-                      </Button>
-                    </div>
+                <div className="view-icon" onClick={() => handleShow10()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/UI-Solution" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -683,15 +630,10 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Career Sprint is an educational platform that provides guidance for st...
-                  </div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                    <div>
-                      <Button className="mt-2 mb-2" onClick={() => handleShow11()}>
-                        Read More
-                      </Button>
-                    </div>
+                   <div className="view-icon" onClick={() => handleShow11()}>
+                        <FaEye title="View Project"/>
+                      </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Career-Sprint" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -728,16 +670,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    This application designed to streamline the operations of a motor driving sch...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow12()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -771,16 +710,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    A complete digital platform for booking and managing traditional Hin...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow13()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -800,7 +736,7 @@ const Myprojects = () => {
                   className="card-img-top hover-zoom"
                 />
                 <div className="projects-body">
-                  <div className="project-name" >ALX-Mart Application.</div>
+                  <div className="project-name" >ALX-Mart Web Application.</div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://calm-beijinho-bcd77f.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -814,16 +750,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    A feature-rich e-commerce platform designed to provide a seamless on...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow14()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -857,16 +790,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Apton Works is a trusted Web3 and Blockchain development company h...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow15()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -900,16 +830,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Baladi is a modern construction and architecture platform that showcase...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow16()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -943,16 +870,13 @@ const Myprojects = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="Project-details">
-                    Golden Property Castle by CANH Infrastructure Ltd. offers residential pl...
-                  </div>
                   <div className="d-flex w-100 mt-1 mb-2">
                     <Button
                       className="mt-2 mb-2 w-100 custom-width"
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow17()}
                     >
-                      Read More
+                      View Project 
                     </Button>
                   </div>
 
@@ -1198,7 +1122,7 @@ const Myprojects = () => {
                   className="card-img-top hover-zoom"
                 />
                 <div className="projects-body">
-                  <div className="project-name" >Smoke Effect Text.</div>
+                  <div className="project-name" >Rising Smoke Text Effect.</div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://smoke-effect-text.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -1284,7 +1208,7 @@ const Myprojects = () => {
                   className="card-img-top hover-zoom"
                 />
                 <div className="projects-body">
-                  <div className="project-name" >Hotel Welcome Card</div>
+                  <div className="project-name" >Digital Hotel Welcome Card</div>
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://hotelmenu-card.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -1577,7 +1501,7 @@ const Myprojects = () => {
       <Modal show={show8} onHide={handleClose8} style={{ zIndex: "99999" }}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <b>TechAR² Application</b>
+            <b>TechAR² Courses Application</b>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -1734,7 +1658,7 @@ const Myprojects = () => {
       <Modal show={show14} onHide={handleClose14} style={{ zIndex: "99999" }}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <b>ALX-Mart Ecommerce Application</b>
+            <b>ALX-Mart Web Application</b>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

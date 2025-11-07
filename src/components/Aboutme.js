@@ -7,15 +7,19 @@ import { SiJavascript, SiMongodb, SiRedux, SiExpress, SiVisualstudiocode, SiType
 import { BsFiletypeCss, BsFiletypeScss } from "react-icons/bs";
 import { FaCircleArrowUp, FaCircleArrowDown } from "react-icons/fa6";
 import Aos from "aos";
-import { IoLogoWhatsapp } from 'react-icons/io';
+import { FaWhatsapp } from "react-icons/fa";
 
 
 const AboutMe = () => {
 
     // Aos Animation 
     useEffect(() => {
-        Aos.init();
-    }, [])
+        Aos.init({
+            duration: 800,   // animation speed
+            once: false,     // allow animations to re-trigger when scrolling up/down
+            easing: "ease-in-out",
+        });
+    }, []);
 
     //Scroll to Top
     const [visible, setVisible] = useState(false);
@@ -64,7 +68,7 @@ const AboutMe = () => {
             <section className="aboutme-section">
                 <div>
                     <a href="https://wa.me/917996748513" target="_blank" className='whatsapp-img ' rel="noreferrer">
-                        <IoLogoWhatsapp className="about-whatsp-hithere" />
+                        <FaWhatsapp className="about-whatsp-hithere" />
                     </a>
                 </div>
 
@@ -85,11 +89,13 @@ const AboutMe = () => {
                     {/* About Me Section */}
                     <Row >
                         {/* Text Column */}
-                        <Col md={7} className="mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <Col md={7} className="mb-4 mb-md-0" data-aos="fade-up"
+                            data-aos-delay="50"
+                            data-aos-duration="3000">
                             <div className="text-start">
                                 <h1 className="section-title">About Me</h1>
                                 <p className="bio-text">
-                                    Hi! I'm <span className="highlight">Sarita Patagar</span>, a passionate <strong>Front-End Developer</strong> with over
+                                    Hi! I'm <span className="highlight">Sarita Patagar</span>, a passionate <strong className="highlight">Front-End Developer</strong> with over
                                     <span className="highlight"> 5.3 years</span> of experience building dynamic, high-performance web applications.
                                     I focus on creating responsive, scalable, and visually appealing solutions while following UI/UX best practices.
                                 </p>
@@ -101,7 +107,9 @@ const AboutMe = () => {
                         </Col>
 
                         {/* Image Column */}
-                        <Col md={5} data-aos="fade-down" data-aos-duration="2000">
+                        <Col md={5} data-aos="fade-down"
+                            data-aos-delay="50"
+                            data-aos-duration="3000">
                             <div className="text-start">
                                 <div className="profile-wrapper">
                                     <div className="profile-border">
@@ -117,32 +125,42 @@ const AboutMe = () => {
                         <Container>
                             <h2 className="section-title text-center mb-5">Tech Skills</h2>
                             <Row className="justify-content-center">
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4"  data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <PiFileHtmlBold className="skill-icon html" />
                                         <h5>HTML</h5>
                                     </div>
                                 </Col>
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaHtml5 className="skill-icon html5" />
                                         <h5>HTML5</h5>
                                     </div>
                                 </Col>
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <BsFiletypeCss className="skill-icon css" />
                                         <h5>CSS</h5>
                                     </div>
                                 </Col>
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaCss3Alt className="skill-icon css3" />
                                         <h5>CSS3</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <BsFiletypeScss className="skill-icon scss" />
                                         <h5>SCSS</h5>
@@ -150,7 +168,9 @@ const AboutMe = () => {
                                 </Col>
 
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaBootstrap className="skill-icon bootstrap" />
                                         <h5>Bootstrap</h5>
@@ -158,54 +178,70 @@ const AboutMe = () => {
                                 </Col>
 
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <span className="skill-icon bootstrap">📦</span>
                                         <h5>Material UI</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaReact className="skill-icon react" />
                                         <h5>React.js</h5>
                                     </div>
                                 </Col>
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiJavascript className="skill-icon js" />
                                         <h5>JavaScript</h5>
                                     </div>
                                 </Col>
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaNodeJs className="skill-icon node" />
                                         <h5>Node.js</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiMongodb className="skill-icon mongo" />
                                         <h5>MongoDB</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiExpress className="skill-icon express" />
                                         <h5>Express.js</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiTypescript className="skill-icon typescript" />
                                         <h5>TypeScript</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiRedux className="skill-icon redux" />
                                         <h5>Redux</h5>
@@ -220,70 +256,90 @@ const AboutMe = () => {
                         <Container>
                             <h2 className="section-title mb-5">Tools I Use</h2>
                             <Row className="justify-content-center">
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiVisualstudiocode className="tool-icon vscode" />
                                         <h5>VS Code</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiGithub className="tool-icon github" />
                                         <h5>GitHub</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiPostman className="tool-icon postman" />
                                         <h5>Postman</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiNpm className="tool-icon npm" />
                                         <h5>NPM</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiMicrosoftword className="tool-icon msword" />
                                         <h5>Microsoft Word</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiMicrosoftexcel className="tool-icon excel" />
                                         <h5>Microsoft Excel</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiNetlify className="tool-icon netlify" />
                                         <h5>Netlify</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiVercel className="tool-icon vercel" />
                                         <h5>Vercel</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <img src="../Assets/cpanel.png" alt="cPanel" className="tool-img" />
                                         <h5>cPanel</h5>
                                     </div>
                                 </Col>
 
-                                <Col md={3} sm={6} className="mb-4">
+                                <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                     <div className="tool-card">
                                         <img src="../Assets/ovipanel.png" alt="Ovipanel" className="tool-img" />
                                         <h5>OVIpanel</h5>
@@ -300,7 +356,9 @@ const AboutMe = () => {
                             <h2 className="section-title text-center mb-5">Experience</h2>
                             <Row>
                                 {/* Card 1 */}
-                                <Col md={12} className="mb-4">
+                                <Col md={12} className="mb-4" data-aos="fade-up"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="experience-card">
                                         <div className="experience-icon">
                                             <FaBriefcase />
@@ -322,7 +380,9 @@ const AboutMe = () => {
                                 </Col>
 
                                 {/* Card 2 */}
-                                <Col md={12} className="mb-4">
+                                <Col md={12} className="mb-4" data-aos="fade-up"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="experience-card">
                                         <div className="experience-icon">
                                             <FaBriefcase />
@@ -344,7 +404,9 @@ const AboutMe = () => {
                                 </Col>
 
                                 {/* Card 3 */}
-                                <Col md={12} className="mb-4">
+                                <Col md={12} className="mb-4" data-aos="fade-up"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="experience-card">
                                         <div className="experience-icon">
                                             <FaBriefcase />
@@ -366,7 +428,9 @@ const AboutMe = () => {
                                 </Col>
 
                                 {/* Card 4 */}
-                                <Col md={12} className="mb-4">
+                                <Col md={12} className="mb-4" data-aos="fade-up"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="experience-card">
                                         <div className="experience-icon">
                                             <FaBriefcase />
@@ -394,7 +458,9 @@ const AboutMe = () => {
                     <section id="experience" className="experience-section ">
                         <Container>
                             <h2 className="section-title text-center mb-5">Education</h2>
-                            <Row>
+                            <Row data-aos="fade-up"
+                                data-aos-delay="50"
+                                data-aos-duration="3000">
                                 {/* SSLC */}
                                 <Col md={12} className="mb-4">
                                     <div className="education-card">
@@ -434,168 +500,168 @@ const AboutMe = () => {
 
                     {/* Certifications */}
                     <section>
-                       <section id="certificates" className="certificates-section">
-  <Container>
-    <h2 className="section-title text-center mb-5">Certificates</h2>
-    <Row>
-      {/* Certificate 1 */}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-             📜
-          </div>
-          <div className="certificate-content">
-            <h4>Certificate of Excellence in JavaScript OOP Master </h4>
-            <h6 className="issuer">TechGig</h6>
-            <span className="duration">July 2025</span>
-            <p>
-              <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                        <section id="certificates" className="certificates-section">
+                            <Container>
+                                <h2 className="section-title text-center mb-5">Certificates</h2>
+                                <Row data-aos="fade-up"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
+                                    {/* Certificate 1 */}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Certificate of Excellence in JavaScript OOP Master </h4>
+                                                <h6 className="issuer">TechGig</h6>
+                                                <span className="duration">July 2025</span>
+                                                <p>
+                                                    <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Certificate 2 */}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Containerized Applications on AWS </h4>
-            <h6 className="issuer">Coursera</h6>
-            <span className="duration">August 2023</span>
-            <p>
-              <a href="https://www.coursera.org/account/accomplishments/certificate/C7WJX44HYZLF" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 2 */}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Containerized Applications on AWS </h4>
+                                                <h6 className="issuer">Coursera</h6>
+                                                <span className="duration">August 2023</span>
+                                                <p>
+                                                    <a href="https://www.coursera.org/account/accomplishments/certificate/C7WJX44HYZLF" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-       {/* Certificate 3 */}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Certificate of Achievement </h4>
-            <h6 className="issuer">Newton School</h6>
-            <span className="duration">June 2023</span>
-            <p>
-              <a href="https://my.newtonschool.co/course/a75hx7fteu/certificate/ito7wej528jz/verify" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 3 */}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Certificate of Achievement </h4>
+                                                <h6 className="issuer">Newton School</h6>
+                                                <span className="duration">June 2023</span>
+                                                <p>
+                                                    <a href="https://my.newtonschool.co/course/a75hx7fteu/certificate/ito7wej528jz/verify" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Certificate 4*/}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Particpated in the coding challenge.</h4>
-            <h6 className="issuer">Skillyst Techtopia</h6>
-            <span className="duration">March 2023</span>
-            <p>
-              <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 4*/}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Particpated in the coding challenge.</h4>
+                                                <h6 className="issuer">Skillyst Techtopia</h6>
+                                                <span className="duration">March 2023</span>
+                                                <p>
+                                                    <a href="https://drive.google.com/file/d/1ZyTEpqVMD-xvJiel0yWY2fyhyArhXflm/view?usp=drive_link" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Certificate 5*/}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Skill Validation Certification for HTML/CSS</h4>
-            <h6 className="issuer">CutShort</h6>
-            <span className="duration">Feb 2023</span>
-            <p>
-              <a href="https://drive.google.com/file/d/1Lg7fvXpis7z5Ok2sXpX_A1E_Zf4tg4zR/view?usp=drive_link" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 5*/}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Skill Validation Certification for HTML/CSS</h4>
+                                                <h6 className="issuer">CutShort</h6>
+                                                <span className="duration">Feb 2023</span>
+                                                <p>
+                                                    <a href="https://drive.google.com/file/d/1Lg7fvXpis7z5Ok2sXpX_A1E_Zf4tg4zR/view?usp=drive_link" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Certificate 6*/}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Skill Validation Certification for React.js</h4>
-            <h6 className="issuer">CutShort</h6>
-            <span className="duration">Feb 2023</span>
-            <p>
-              <a href="https://drive.google.com/file/d/1e8IxLMc18cso8CeOanCq9c3noFwaR1aG/view?usp=drive_link" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 6*/}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Skill Validation Certification for React.js</h4>
+                                                <h6 className="issuer">CutShort</h6>
+                                                <span className="duration">Feb 2023</span>
+                                                <p>
+                                                    <a href="https://drive.google.com/file/d/1e8IxLMc18cso8CeOanCq9c3noFwaR1aG/view?usp=drive_link" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Certificate 7*/}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Completion Certificate of Responsive Web Design</h4>
-            <h6 className="issuer">freeCodeCamp</h6>
-            <span className="duration">June 2023</span>
-            <p>
-              <a href="https://www.freecodecamp.org/certification/fcc94b763ae-700f-4806-8d5c-3be3560d72da/responsive-web-design" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 7*/}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Completion Certificate of Responsive Web Design</h4>
+                                                <h6 className="issuer">freeCodeCamp</h6>
+                                                <span className="duration">June 2023</span>
+                                                <p>
+                                                    <a href="https://www.freecodecamp.org/certification/fcc94b763ae-700f-4806-8d5c-3be3560d72da/responsive-web-design" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-       {/* Certificate 8*/}
-      <Col md={12} className="mb-4">
-        <div className="certificate-card">
-          <div className="certificate-icon">
-            📜
-          </div>
-          <div className="certificate-content">
-            <h4>Completing 7 days Free Bootcamp on Netfix Clone using HTML, CSS and JavaScript</h4>
-            <h6 className="issuer">DevTown</h6>
-            <span className="duration">Sep 2023</span>
-            <p>
-              <a href="https://drive.google.com/file/d/17yOTM_9ky5kSqaf5z1iG6uLLt5LfCzwT/view?usp=drive_link" target="_blank" rel="noreferrer">
-                View Certificate
-              </a>
-            </p>
-          </div>
-        </div>
-      </Col>
+                                    {/* Certificate 8*/}
+                                    <Col md={12} className="mb-4">
+                                        <div className="certificate-card">
+                                            <div className="certificate-icon">
+                                                📜
+                                            </div>
+                                            <div className="certificate-content">
+                                                <h4>Completing 7 days Free Bootcamp on Netfix Clone using HTML, CSS and JavaScript</h4>
+                                                <h6 className="issuer">DevTown</h6>
+                                                <span className="duration">Sep 2023</span>
+                                                <p>
+                                                    <a href="https://drive.google.com/file/d/17yOTM_9ky5kSqaf5z1iG6uLLt5LfCzwT/view?usp=drive_link" target="_blank" rel="noreferrer">
+                                                        View Certificate
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Col>
 
-      {/* Add more certificates similarly */}
-    </Row>
-  </Container>
-</section>
-
-
+                                    {/* Add more certificates similarly */}
+                                </Row>
+                            </Container>
+                        </section>
                     </section>
                 </Container>
             </section>

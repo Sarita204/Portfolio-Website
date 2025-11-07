@@ -98,7 +98,7 @@
 }
 
 .btn-primary:hover {
-  transform: translateY(-4px);
+  transform: translateX(0px);
   box-shadow: 0 10px 25px rgba(255, 0, 204, 0.5) !important;
   background: #358eb4 !important;
 
@@ -163,11 +163,10 @@
   }
 }
 
-
 /* Mobile Responsive */
 @media screen and (max-width: 799px) {
   .hero-section {
-    height: 170vh;
+padding: 65px 0 20px 0;
   }
 
   .hero-title {

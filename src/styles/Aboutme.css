@@ -471,14 +471,16 @@
 
 
 .about-whatsp-hithere {
-  color: green;
+  /* color: green; */
   font-size: 40px;
-  border-radius: 20%;
+  border-radius: 40%;
   position: fixed;
   bottom: 12px;
   right: 10px;
   padding: 2px;
   z-index: 999;
+  color: white;
+  background-color: #25d366;
 }
 
 .about-whatsp-hithere {
@@ -511,9 +513,7 @@
 
 /* Mobile Responsive  */
 @media screen and (max-width: 799px) {
-  .aboutme-section{
-    padding: 45px 0 40px;
-  }
+
   .section-title {
     font-size: 30px;
     margin: 15px 0px !important;

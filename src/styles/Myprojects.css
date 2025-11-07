@@ -29,7 +29,6 @@
     width: 100%;
     object-fit: fill;
     cursor: pointer;
-
 }
 
 .hover-zoom {
@@ -47,7 +46,7 @@
 .project-name {
     color: rgb(14 198 223 / 96%) !important;
     font-family: none;
-    font-size: 20px;
+    /* font-size: 17px; */
 }
 
 .live-dot {
@@ -119,9 +118,22 @@
     margin: auto 0px;
 }
 
+.view-icon{
+     font-size: 18px;
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    padding: 0px 6px;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+}
+
+.view-icon:hover{
+  background: #358eb4;
+
+}
 .navigate-to-github {
     color: white !important;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .hithere {
@@ -174,10 +186,6 @@
 
 /* Mobile Responsive  */
 @media screen and (max-width: 799px) {
-    .project-section {
-        padding: 45px 0 40px;
-    }
-
     .section-title {
         font-size: 30px;
         margin: 0px 0px !important;
