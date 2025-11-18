@@ -11,9 +11,13 @@ import { FaEye } from "react-icons/fa";
 const Myprojects = () => {
 
   // Aos Animation 
-  useEffect(() => {
-    Aos.init();
-  }, [])
+useEffect(() => {
+  Aos.init({
+    duration: 800,
+    once: true,
+  });
+  Aos.refresh();
+}, []);
 
 
   //Scroll to Top
@@ -195,7 +199,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://dailydish.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -235,7 +239,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://shuttlesmash.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -274,7 +278,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="http://roomyy.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -313,7 +317,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://students-database.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -352,7 +356,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://instabuycomputers.com/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -391,7 +395,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://nestwayinteriors.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -430,7 +434,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://www.tripgraam.com/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -469,7 +473,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://valueproservice.com/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -508,7 +512,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="http://techar2.com/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -547,7 +551,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://uniquesquare.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -586,7 +590,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="http://www.uisolutions.co.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -625,7 +629,7 @@ const Myprojects = () => {
                     </div>
                     <div>
                       <a href="https://careersprint.in/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                   </div>
@@ -660,7 +664,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://dancing-melba-621995.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -700,7 +704,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://starlit-douhua-a91dda.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -740,7 +744,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://calm-beijinho-bcd77f.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -780,7 +784,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://apton-works.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -820,7 +824,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://baladi-builder-and-construction.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -860,7 +864,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://golden-and-daksha-property.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site fade-in-left" />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" />
                       </a>
                     </div>
                     <div>
@@ -910,7 +914,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://react-calculatr.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -953,7 +957,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://reactredux-to-do-app.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -996,7 +1000,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://drag-and-drop-html-css-js.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -1040,7 +1044,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://text-to-voice-apps.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -1083,7 +1087,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://movie-streaming-ui-clone.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation " style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -1126,7 +1130,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://smoke-effect-text.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -1169,7 +1173,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://analog-clockss.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>
@@ -1212,7 +1216,7 @@ const Myprojects = () => {
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div>
                       <a href="https://hotelmenu-card.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FaExternalLinkAlt className="navigate-to-site " style={{ fontSize: "22px" }} />
+                        <FaExternalLinkAlt className="navigate-to-site navigate-animation" style={{ fontSize: "22px" }} />
                       </a>
                     </div>
                     <div>

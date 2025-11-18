@@ -9,12 +9,14 @@
 .project-card {
     background-color: #111;
     text-align: center;
-    border: 1px inset;
     border: 1px solid rgba(250, 24, 205, 0.9);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     text-align: left;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
 }
 
@@ -63,7 +65,7 @@
 }
 
 .flash {
-    animation: flash 500ms ease infinite alternate;
+     animation: flash 500ms ease infinite alternate;
     background: #198754;
     margin: 0 5px 0 0;
 }
@@ -85,11 +87,11 @@
 
 }
 
-.fade-in-left {
-    animation: fade-in-left 2s ease infinite;
+.navigate-animation {
+    animation: navigate-animation 2s ease infinite;
 }
 
-@keyframes fade-in-left {
+@keyframes navigate-animation {
     0% {
         opacity: 0;
         transform: translateX(-20px);

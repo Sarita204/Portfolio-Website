@@ -62,7 +62,6 @@ const AboutMe = () => {
         };
     }, []);
 
-
     return (
         <div>
             <section className="aboutme-section">
@@ -72,10 +71,7 @@ const AboutMe = () => {
                     </a>
                 </div>
 
-                <div
-                    className="scrool-up-icon"
-                    style={{ display: visible ? "inline" : "none" }}
-                >
+                <div className="scrool-up-icon" style={{ display: visible ? "inline" : "none" }}>
                     <div className="scrool mb-2" onClick={scrollToTop}>
                         <FaCircleArrowUp className='scrool-icon' />
                     </div>
@@ -125,33 +121,33 @@ const AboutMe = () => {
                         <Container>
                             <h2 className="section-title text-center mb-5">Tech Skills</h2>
                             <Row className="justify-content-center">
-                                <Col md={3} sm={6} className="mb-4"  data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <PiFileHtmlBold className="skill-icon html" />
                                         <h5>HTML</h5>
                                     </div>
                                 </Col>
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaHtml5 className="skill-icon html5" />
                                         <h5>HTML5</h5>
                                     </div>
                                 </Col>
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <BsFiletypeCss className="skill-icon css" />
                                         <h5>CSS</h5>
                                     </div>
                                 </Col>
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaCss3Alt className="skill-icon css3" />
                                         <h5>CSS3</h5>
@@ -159,8 +155,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <BsFiletypeScss className="skill-icon scss" />
                                         <h5>SCSS</h5>
@@ -169,8 +165,8 @@ const AboutMe = () => {
 
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaBootstrap className="skill-icon bootstrap" />
                                         <h5>Bootstrap</h5>
@@ -179,8 +175,8 @@ const AboutMe = () => {
 
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <span className="skill-icon bootstrap">📦</span>
                                         <h5>Material UI</h5>
@@ -188,24 +184,24 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaReact className="skill-icon react" />
                                         <h5>React.js</h5>
                                     </div>
                                 </Col>
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiJavascript className="skill-icon js" />
                                         <h5>JavaScript</h5>
                                     </div>
                                 </Col>
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <FaNodeJs className="skill-icon node" />
                                         <h5>Node.js</h5>
@@ -213,8 +209,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiMongodb className="skill-icon mongo" />
                                         <h5>MongoDB</h5>
@@ -222,8 +218,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiExpress className="skill-icon express" />
                                         <h5>Express.js</h5>
@@ -231,8 +227,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiTypescript className="skill-icon typescript" />
                                         <h5>TypeScript</h5>
@@ -240,8 +236,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="skill-card">
                                         <SiRedux className="skill-icon redux" />
                                         <h5>Redux</h5>
@@ -257,8 +253,8 @@ const AboutMe = () => {
                             <h2 className="section-title mb-5">Tools I Use</h2>
                             <Row className="justify-content-center">
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiVisualstudiocode className="tool-icon vscode" />
                                         <h5>VS Code</h5>
@@ -266,8 +262,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiGithub className="tool-icon github" />
                                         <h5>GitHub</h5>
@@ -275,8 +271,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiPostman className="tool-icon postman" />
                                         <h5>Postman</h5>
@@ -284,8 +280,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiNpm className="tool-icon npm" />
                                         <h5>NPM</h5>
@@ -293,8 +289,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiMicrosoftword className="tool-icon msword" />
                                         <h5>Microsoft Word</h5>
@@ -302,8 +298,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiMicrosoftexcel className="tool-icon excel" />
                                         <h5>Microsoft Excel</h5>
@@ -311,8 +307,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiNetlify className="tool-icon netlify" />
                                         <h5>Netlify</h5>
@@ -320,8 +316,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <SiVercel className="tool-icon vercel" />
                                         <h5>Vercel</h5>
@@ -329,8 +325,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <img src="../Assets/cpanel.png" alt="cPanel" className="tool-img" />
                                         <h5>cPanel</h5>
@@ -338,8 +334,8 @@ const AboutMe = () => {
                                 </Col>
 
                                 <Col md={3} sm={6} className="mb-4" data-aos="fade-up"
-                                data-aos-delay="50"
-                                data-aos-duration="3000">
+                                    data-aos-delay="50"
+                                    data-aos-duration="3000">
                                     <div className="tool-card">
                                         <img src="../Assets/ovipanel.png" alt="Ovipanel" className="tool-img" />
                                         <h5>OVIpanel</h5>
