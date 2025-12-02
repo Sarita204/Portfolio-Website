@@ -67,7 +67,7 @@ const Home = () => {
                 rel="noreferrer"
                 className="btn-primary"
               >
-                <FaDownload /> Download Resume
+                <FaDownload className="fade-in-down"/> Download Resume
               </a>
               <a
                 href="https://wa.me/917996748513"
@@ -78,6 +78,7 @@ const Home = () => {
                 💬 Hire Me
               </a>
             </div>
+
           </div>
 
           {/* Right Side: Image */}

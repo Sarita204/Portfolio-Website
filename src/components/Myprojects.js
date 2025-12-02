@@ -11,13 +11,13 @@ import { FaEye } from "react-icons/fa";
 const Myprojects = () => {
 
   // Aos Animation 
-useEffect(() => {
-  Aos.init({
-    duration: 800,
-    once: true,
-  });
-  Aos.refresh();
-}, []);
+  useEffect(() => {
+    Aos.init({
+      duration: 800,   // animation speed
+      once: false,     // allow animations to re-trigger when scrolling up/down
+      easing: "ease-in-out",
+    });
+  }, []);
 
 
   //Scroll to Top
@@ -157,7 +157,7 @@ useEffect(() => {
       <section className="project-section">
         <div>
           <a href="https://wa.me/917996748513" target="_blank" className='whatsapp-img ' rel="noreferrer">
-            <FaWhatsapp  className="about-whatsp-hithere" />
+            <FaWhatsapp className="about-whatsp-hithere" />
           </a>
         </div>
         <div
@@ -180,11 +180,11 @@ useEffect(() => {
           <Row>
 
             {/* Daily Dish Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-easing="linear"
+              data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/dailydish-img1.jpg"
                   alt="Card"
@@ -204,11 +204,11 @@ useEffect(() => {
                     </div>
                   </div>
                   <hr />
-                  
+
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                      <div className="view-icon" onClick={() => handleShow()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Dailydish-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -220,15 +220,15 @@ useEffect(() => {
             </Col>
 
             {/* Shuttle Smash Championship Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/shuttlesmash-img.jpg"
                   alt="Card"
-                  className="card-img-top hover-zoom" 
+                  className="card-img-top hover-zoom"
                 />
                 <div className="projects-body">
                   <div className="project-name" >Shuttle Smash Championship.</div>
@@ -246,8 +246,8 @@ useEffect(() => {
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
                     <div className="view-icon" onClick={() => handleShow1()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Shuttle-smash-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -259,11 +259,11 @@ useEffect(() => {
             </Col>
 
             {/* Roomyy Interior Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/roomyy.jpg"
                   alt="Card"
@@ -284,9 +284,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                   <div className="view-icon" onClick={() => handleShow2()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow2()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Roomyy-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -298,11 +298,11 @@ useEffect(() => {
             </Col>
 
             {/* Student Database Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/studentdatabse.jpg"
                   alt="Card"
@@ -323,9 +323,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                <div className="view-icon" onClick={() => handleShow3()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow3()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Student-Database-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -337,11 +337,11 @@ useEffect(() => {
             </Col>
 
             {/* Instabuy Computers Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/instabuy.jpg"
                   alt="Card"
@@ -362,9 +362,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-               <div className="view-icon" onClick={() => handleShow4()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow4()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Insta-buy-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -376,11 +376,11 @@ useEffect(() => {
             </Col>
 
             {/* Nestway Interior Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/nestway.jpg"
                   alt="Card"
@@ -401,9 +401,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-               <div className="view-icon" onClick={() => handleShow5()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow5()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Nestway-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -415,11 +415,11 @@ useEffect(() => {
             </Col>
 
             {/* Tripgraam Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/tripgraam.jpg"
                   alt="Card"
@@ -440,9 +440,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-              <div className="view-icon" onClick={() => handleShow6()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow6()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Tripgraam-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -454,11 +454,11 @@ useEffect(() => {
             </Col>
 
             {/* Value Pro Services Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/valuepro.jpg"
                   alt="Card"
@@ -479,9 +479,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-<div className="view-icon" onClick={() => handleShow7()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow7()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/UC-Frontend" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -493,11 +493,11 @@ useEffect(() => {
             </Col>
 
             {/* Techar2 Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/techar.jpg"
                   alt="Card"
@@ -518,9 +518,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                <div className="view-icon" onClick={() => handleShow8()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow8()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Techar2" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -532,11 +532,11 @@ useEffect(() => {
             </Col>
 
             {/* Unique Square Application Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/uniquesquare.jpg"
                   alt="Card"
@@ -557,9 +557,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                <div className="view-icon" onClick={() => handleShow9()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow9()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Unique-Square-website" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -571,11 +571,11 @@ useEffect(() => {
             </Col>
 
             {/* Unique Industrial Solutions Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/uisolution.jpg"
                   alt="Card"
@@ -596,9 +596,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                <div className="view-icon" onClick={() => handleShow10()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow10()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/UI-Solution" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -610,11 +610,11 @@ useEffect(() => {
             </Col>
 
             {/* Career Sprint Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/careersprint.jpg"
                   alt="Card"
@@ -635,9 +635,9 @@ useEffect(() => {
                   </div>
                   <hr />
                   <div className="d-flex justify-content-between mt-1 mb-2">
-                   <div className="view-icon" onClick={() => handleShow11()}>
-                        <FaEye title="View Project"/>
-                      </div>
+                    <div className="view-icon" onClick={() => handleShow11()}>
+                      <FaEye title="View Project" />
+                    </div>
                     <div className="git-icon">
                       <a href="https://github.com/Sarita204/Career-Sprint" target="_blank" rel="noopener noreferrer">
                         <TbBrandGithub className="navigate-to-github hithere" />
@@ -649,11 +649,11 @@ useEffect(() => {
             </Col>
 
             {/* Motor Driving School Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/driving-school.jpg"
                   alt="Card"
@@ -680,7 +680,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow12()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -689,11 +689,11 @@ useEffect(() => {
             </Col>
 
             {/* Pandith Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/pooja-pandith.png"
                   alt="Card"
@@ -720,7 +720,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow13()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -729,11 +729,11 @@ useEffect(() => {
             </Col>
 
             {/* ALX-Mart Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/alx-mart.png"
                   alt="Card"
@@ -760,7 +760,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow14()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -769,11 +769,11 @@ useEffect(() => {
             </Col>
 
             {/* Apton Works Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/Apton.jpg"
                   alt="Card"
@@ -800,7 +800,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow15()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -809,11 +809,11 @@ useEffect(() => {
             </Col>
 
             {/* Baladi Builders & Developers Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/baladi.jpg"
                   alt="Card"
@@ -840,7 +840,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow16()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -849,11 +849,11 @@ useEffect(() => {
             </Col>
 
             {/* Golden Properties Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/goldenproperty.jpg"
                   alt="Card"
@@ -880,7 +880,7 @@ useEffect(() => {
                       style={{ width: "-webkit-fill-available" }}
                       onClick={() => handleShow17()}
                     >
-                      View Project 
+                      View Project
                     </Button>
                   </div>
 
@@ -899,11 +899,11 @@ useEffect(() => {
           <Row>
 
             {/* React Calculator Application. Project Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/reactcalculatr.jpg"
                   alt="Card"
@@ -942,11 +942,11 @@ useEffect(() => {
             </Col>
 
             {/* Redux To Do Application */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/Reduxtodoapp.jpg"
                   alt="Card"
@@ -985,11 +985,11 @@ useEffect(() => {
             </Col>
 
             {/* Drag and Drop Application */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/draganddrop.png"
                   alt="Card"
@@ -1029,11 +1029,11 @@ useEffect(() => {
             </Col>
 
             {/* Text to Speech Converter. */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/texttovoice.jpg"
                   alt="Card"
@@ -1072,11 +1072,11 @@ useEffect(() => {
             </Col>
 
             {/* Netflix Clone Application */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/netflix.png"
                   alt="Card"
@@ -1115,11 +1115,11 @@ useEffect(() => {
             </Col>
 
             {/* Smoke Effect Text. */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/smokeeffect.jpg"
                   alt="Card"
@@ -1158,11 +1158,11 @@ useEffect(() => {
             </Col>
 
             {/* Analog Clock Application. */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/Analogclock.jpg"
                   alt="Card"
@@ -1201,11 +1201,11 @@ useEffect(() => {
             </Col>
 
             {/* Hotel Welcome Card */}
-            <Col md={3} sm={6} className="mb-4">
-              <div className="project-card"
-                data-aos="zoom-in"
-                data-aos-delay="50"
-                data-aos-duration="3000">
+            <Col md={3} sm={6} className="mb-4" data-aos="zoom-in"
+                            data-aos-delay="50"
+                                  data-aos-easing="linear"
+                                    data-aos-duration="1500">
+              <div className="project-card">
                 <img
                   src="../Assets/Anandhotel.jpg"
                   alt="Card"

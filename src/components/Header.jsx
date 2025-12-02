@@ -104,6 +104,7 @@ const Header = () => {
               end
               className="nav-link"
               onClick={handleNavClick}
+              reloadDocument
             >
               Home
             </Nav.Link>
@@ -112,6 +113,7 @@ const Header = () => {
               to="/about"
               className="nav-link"
               onClick={handleNavClick}
+              reloadDocument
             >
               About Me
             </Nav.Link>
@@ -120,6 +122,7 @@ const Header = () => {
               to="/myprojects"
               className="nav-link"
               onClick={handleNavClick}
+              reloadDocument
             >
               Projects
             </Nav.Link>

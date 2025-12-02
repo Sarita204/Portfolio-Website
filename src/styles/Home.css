@@ -87,7 +87,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 28px;
+  padding: 10px 12px;
   border-radius: 40px;
   background: linear-gradient(135deg, #ff00cc, #3333ff);
   color: #fff;
@@ -95,13 +95,14 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  justify-content: center;
+
 }
 
 .btn-primary:hover {
   transform: translateX(0px);
   box-shadow: 0 10px 25px rgba(255, 0, 204, 0.5) !important;
   background: #358eb4 !important;
-
 }
 
 .btn-secondary {
@@ -163,10 +164,25 @@
   }
 }
 
+.fade-in-down {
+  animation: fade-in-down 2s ease infinite;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Mobile Responsive */
 @media screen and (max-width: 799px) {
   .hero-section {
-padding: 65px 0 20px 0;
+    padding: 65px 0 20px 0;
   }
 
   .hero-title {
